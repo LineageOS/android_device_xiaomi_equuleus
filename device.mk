@@ -105,3 +105,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     sensors.udfps
+
+# WiFi
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
