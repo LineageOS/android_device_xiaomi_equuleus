@@ -5,7 +5,7 @@
 #
 
 # Inherit from sdm845-common
--include device/xiaomi/sdm845-common/BoardConfigCommon.mk
+include device/xiaomi/sdm845-common/BoardConfigCommon.mk
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -41,4 +41,4 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_USES_NQ_NFC := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/equuleus/BoardConfigVendor.mk
+include vendor/xiaomi/equuleus/BoardConfigVendor.mk
