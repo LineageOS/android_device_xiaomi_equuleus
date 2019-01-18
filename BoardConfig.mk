@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/equuleus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := equuleus
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Kernel
 TARGET_KERNEL_CONFIG := equuleus_defconfig
 
