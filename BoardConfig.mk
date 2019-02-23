@@ -28,13 +28,10 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # NFC
 TARGET_USES_NQ_NFC := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/equuleus/BoardConfigVendor.mk
-
-# Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private

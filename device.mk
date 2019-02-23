@@ -32,14 +32,6 @@ $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
-# HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service.xiaomi_sdm845
