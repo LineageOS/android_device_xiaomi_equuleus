@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service.xiaomi_sdm845
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
