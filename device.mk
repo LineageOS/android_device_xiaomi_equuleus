@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service.xiaomi_sdm845
+    vendor.lineage.livedisplay@2.0-service.xiaomi_sdm845
 
 # NFC
 PRODUCT_PACKAGES += \
