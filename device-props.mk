@@ -1,3 +1,7 @@
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.soundfx.type=dirac
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.sat.fallback.dist=45 \
@@ -9,8 +13,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
 
-# Display features
+# Display postprocessing
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.displayfeature.histogram.enable=false \
-    ro.eyecare.brightness.threshold=3 \
-    ro.eyecare.brightness.level=8
+    vendor.display.enable_default_color_mode=0
+
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fp.fod=true \
+    ro.hardware.fp.goodix_fod=true \
+    ro.hardware.fp.syna=true
+
+# GNSS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.flp=brcm \
+    ro.hardware.gps=brcm
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default \
+    ro.se.type=HCE,UICC
