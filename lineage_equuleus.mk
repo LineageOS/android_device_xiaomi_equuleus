@@ -20,7 +20,6 @@ BUILD_FINGERPRINT := "Xiaomi/equuleus/equuleus:8.1.0/OPM1.171019.026/V9.6.6.0.OE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="equuleus-user 8.1.0 OPM1.171019.026 V9.6.6.0.OECCNFD release-keys" \
-    PRODUCT_NAME="equuleus" \
-    TARGET_DEVICE="equuleus"
+    PRODUCT_NAME="equuleus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
