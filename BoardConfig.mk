@@ -12,9 +12,6 @@ DEVICE_PATH := device/xiaomi/equuleus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := equuleus
 
-# Camera
-TARGET_FACE_UNLOCK_CAMERA_ID := 5
-
 # Kernel
 TARGET_KERNEL_CONFIG := equuleus_defconfig
 
