@@ -1,3 +1,5 @@
+# Device proprietary files - from equuleus' MIUI package V11.0.3.0.QECMIXM global stable version
+
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
 vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
