@@ -14,8 +14,13 @@
     <ctl name="QUAT_MI2S_RX_Voice Mixer Voip" value="0" />
     <ctl name="ADC3 Volume" value="12" />
     <ctl name="ADC4 Volume" value="12" />
-    <ctl name="Configuration" value="0" />
+    <ctl name="Configuration" value="4" />
+    <ctl name="QUAT_MI2S_RX Channels" value="One" />
+    <ctl name="QUAT_MI2S_RX Format" value="S24_LE" />
     <ctl name="QUAT_MI2S_RX SampleRate" value="KHZ_48" />
+    <ctl name="QUAT_MI2S_TX Channels" value="One" />
+    <ctl name="QUAT_MI2S_TX Format" value="S24_LE" />
+    <ctl name="QUAT_MI2S_TX SampleRate" value="KHZ_48" />
     <ctl name="External AMIC2 Mux" value="Dual_ADC" />
 
 
@@ -393,7 +398,7 @@
     </path>
 
     <path name="speaker">
-        <ctl name="Configuration" value="0" />
+        <ctl name="Configuration" value="4" />
     </path>
 
     <path name="speaker-protected">
@@ -401,10 +406,10 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="Configuration" value="1" />
+        <ctl name="Configuration" value="5" />
     </path>
     <path name="voice-speaker-protected">
-        <ctl name="Configuration" value="1" />
+        <ctl name="Configuration" value="5" />
     </path>
 
     <path name="handset">
@@ -465,15 +470,7 @@
     </path>
 
     <path name="camcorder-dmic">
-        <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
-        <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
-        <ctl name="CDC_IF TX7 MUX" value="DEC7" />
-        <ctl name="ADC MUX7" value="AMIC" />
-        <ctl name="AMIC MUX7" value="ADC3" />
-        <ctl name="CDC_IF TX8 MUX" value="DEC8" />
-        <ctl name="ADC MUX8" value="AMIC" />
-        <ctl name="AMIC MUX8" value="ADC1" />
-        <ctl name="SLIM_0_TX Channels" value="Two" />
+        <path name="handset-dmic-dual-adc" />
     </path>
 
     <path name="sidetone-headphones">
