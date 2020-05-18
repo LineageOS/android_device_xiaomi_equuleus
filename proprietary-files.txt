@@ -28,7 +28,9 @@ vendor/etc/tas2557.ftcfg
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/libbtnv.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/libbtnv.so
 
 # Camera
 vendor/bin/remosaic_daemon
@@ -54,31 +56,12 @@ vendor/etc/camera/score_bg.png
 vendor/etc/camera/score_icon.png
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/watermark_font_2300_3199.dat
-vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_dualcam_refocus_front.so
-vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
-vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
-vendor/lib64/libarcsoft_dualcam_refocus.so
-vendor/lib64/libarcsoft_high_dynamic_range.so
-vendor/lib64/libarcsoft_supernight.so
-vendor/lib64/libbinder.so
-vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxfdalgov7.so
+vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxstatscore.so
-vendor/lib64/libHalSuperSensorServer.so
-vendor/lib64/libmibokeh_845.so
-vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
-vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaiclib.so
-vendor/lib64/libSuperSensor.so
-vendor/lib64/libSuperSensorCPU.so
-vendor/lib/camera/components/etc/GpuKernelRepo.pb
-vendor/lib/camera/components/etc/model_back.dlc
-vendor/lib/camera/components/etc/model_front.dlc
-vendor/lib/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
-vendor/lib/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
-vendor/lib/camera/components/etc/morpho_lowlight4.0.xml
+vendor/lib64/libremosaic_daemon.so
 vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
 vendor/lib/camera/components/com.arcsoft.node.capturefusion.so
 vendor/lib/camera/components/com.arcsoft.node.hdrchecker.so
@@ -89,7 +72,6 @@ vendor/lib/camera/components/com.arcsoft.node.smoothtransition.so
 vendor/lib/camera/components/com.arcsoft.node.superlowlight.so
 vendor/lib/camera/components/com.mi.node.aiadd.so
 vendor/lib/camera/components/com.mi.node.aiasd.so
-vendor/lib/camera/components/com.morpho.node.videorefiner.so
 vendor/lib/camera/components/com.qti.eisv2.so
 vendor/lib/camera/components/com.qti.eisv3.so
 vendor/lib/camera/components/com.qti.hvx.addconstant.so
@@ -118,6 +100,12 @@ vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.vidhance.node.eis.so
 vendor/lib/camera/components/com.xiaomi.node.mibokeh.so
+vendor/lib/camera/components/etc/GpuKernelRepo.pb
+vendor/lib/camera/components/etc/model_back.dlc
+vendor/lib/camera/components/etc/model_front.dlc
+vendor/lib/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
+vendor/lib/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
+vendor/lib/camera/components/etc/morpho_lowlight4.0.xml
 vendor/lib/camera/com.qti.sensor.imx363.so
 vendor/lib/camera/com.qti.sensormodule.imx333.bin
 vendor/lib/camera/com.qti.sensormodule.imx363.bin
@@ -139,6 +127,7 @@ vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
+vendor/lib/lib_denoiser3.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_image_optical_zoom.so
 vendor/lib/libarcsoft_dualcam_optical_zoom_control.so
@@ -152,23 +141,21 @@ vendor/lib/libarcsoft_low_light_hdr.so
 vendor/lib/libarcsoft_portrait_lighting_c.so
 vendor/lib/libarcsoft_portrait_lighting.so
 vendor/lib/libarcsoft_supernight.so
-vendor/lib/libbinder.so
 vendor/lib/libcamera_dirty.so
 vendor/lib/libcamera_scene.so
 vendor/lib/libcamxfdalgov7.so
 vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxstaticaecalgo.so
-vendor/lib/libcamxstaticawbalgo.so
 vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libc++_shared.so
 vendor/lib/libFaceGrade.so
+vendor/lib/libft2vendor.so
 vendor/lib/libHalSuperSensorServer.so
+vendor/lib/libmdsprpc.so
 vendor/lib/libmibokeh_845.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libmpbase.so
 vendor/lib/libnanopb.so
 vendor/lib/libremosaic_daemon.so
@@ -182,7 +169,6 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libtonemapalgo.so
 vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
-vendor/lib/lib_denoiser3.so
 vendor/lib/mibokeh_845_opencl.bin
 
 # Camera firmware
@@ -198,46 +184,36 @@ vendor/etc/sdr_config.cfg
 vendor/etc/hdr_config.cfg
 
 # Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/hw/fingerprint.goodix_fod.so
-vendor/lib64/hw/fingerprint.syna.so
 vendor/lib64/libgf_ca_gf9118.so
 vendor/lib64/libgf_hal_gf9118.so
 vendor/lib64/libgoodixhwfingerprint_gf9118.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.synaptics.fingerprints.interfaces.extensions@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # GNSS
-vendor/bin/ignss_1_1
-vendor/bin/gps.cer
 vendor/bin/glgps
+vendor/bin/gps.cer
+vendor/bin/ignss_2_0
 vendor/bin/lhd
-vendor/etc/gpsconfig.xml
 vendor/etc/gps.conf
+vendor/etc/gpsconfig.xml
 vendor/etc/lhd.conf
 vendor/etc/SensorHub.patch
-vendor/lib64/hw/gps.brcm.so
-vendor/lib64/hw/flp.brcm.so
-vendor/lib64/android.hardware.gnss@1.1-impl-xiaomi.so
-vendor/lib64/liblocation_api.so
-vendor/lib64/libloc_core.so
-vendor/lib64/libdiag_jni.so
-vendor/lib64/libdiagjni.so
-vendor/lib64/libevent_observer.so
-vendor/lib64/libgarden.so
-vendor/lib64/libgps.utils.so
-vendor/lib/liblocation_api.so
-vendor/lib/libloc_core.so
-vendor/lib/libdiag_jni.so
 vendor/lib/libdiagjni.so
-vendor/lib/libevent_observer.so
-vendor/lib/libgarden.so
 vendor/lib/libgps.utils.so
+vendor/lib64/android.hardware.gnss@2.0-impl-xiaomi.so
+vendor/lib64/hw/flp.brcm.so
+vendor/lib64/hw/gps.brcm.so
+vendor/lib64/libdiagjni.so
+vendor/lib64/libgps.utils.so
 
 # Hotword enrollment
--priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
--priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -325,7 +301,3 @@ vendor/etc/thermal-engine-sdm845-sgame.conf
 vendor/etc/thermal-engine-sdm845-tgame.conf
 vendor/etc/thermal-engine-sdm845.conf
 vendor/etc/thermal-engine.conf
-
-# WiFi
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-vendor/lib/vendor.qti.hardware.wifi.keystore@1.0.so
