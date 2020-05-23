@@ -184,15 +184,10 @@ vendor/etc/sdr_config.cfg
 vendor/etc/hdr_config.cfg
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib64/hw/fingerprint.goodix_fod.so
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sdm845.so
 vendor/lib64/libgf_ca_gf9118.so
 vendor/lib64/libgf_hal_gf9118.so
 vendor/lib64/libgoodixhwfingerprint_gf9118.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # GNSS
 vendor/bin/glgps
