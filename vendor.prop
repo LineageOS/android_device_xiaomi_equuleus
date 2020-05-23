@@ -4,11 +4,6 @@ ro.vendor.audio.soundfx.type=dirac
 # Display postprocessing
 vendor.display.enable_default_color_mode=0
 
-# Fingerprint
-ro.hardware.fp.fod=true
-ro.hardware.fp.goodix_fod=true
-ro.hardware.fp.syna=true
-
 # GNSS
 ro.hardware.flp=brcm
 ro.hardware.gps=brcm
