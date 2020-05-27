@@ -17,6 +17,9 @@ TARGET_OTA_ASSERT_DEVICE := equuleus
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# FOD
+TARGET_SURFACEFLINGER_FOD_LIB := //device/xiaomi/sdm845-common:libfod_extension.xiaomi_sdm845
+
 # Kernel
 TARGET_KERNEL_CONFIG := equuleus_defconfig
 
