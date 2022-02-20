@@ -273,7 +273,6 @@ vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/tsl2584.json
 vendor/etc/sensors/config/vl53l0_tof_0.json
-vendor/etc/sensors/hals.conf
 
 # Snapdragon Computer Vision Engine
 vendor/lib64/libscveFaceLandmarks.so
