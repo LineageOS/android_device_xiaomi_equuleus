@@ -17,6 +17,9 @@ TARGET_OTA_ASSERT_DEVICE := equuleus
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# UDFPS
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.xiaomi_sdm845
+
 # Kernel
 TARGET_KERNEL_CONFIG := equuleus_defconfig
 
