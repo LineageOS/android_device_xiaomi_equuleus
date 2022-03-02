@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "841b81e2_fb115f1a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-02T10:46:05Z",
+      "side": 1,
+      "message": "This is wrong.\n\n\u003e $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)",
+      "range": {
+        "startLine": 13,
+        "startChar": 16,
+        "endLine": 13,
+        "endChar": 53
+      },
+      "revId": "75015690fd06cab7295f1f2e58f5dfa7d263e16b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
