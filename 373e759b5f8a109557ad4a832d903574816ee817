@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0fd06d9_def8010e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-02T10:46:44Z",
+      "side": 1,
+      "message": "Same deal, let\u0027s go with the change merged already for dipper.",
+      "revId": "373e759b5f8a109557ad4a832d903574816ee817",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
