@@ -1,6 +1,9 @@
 # Audio
 ro.vendor.audio.soundfx.type=dirac
 
+# Bluetooth
+bluetooth.device.default_name=Xiaomi Mi 8 Pro
+
 # Display postprocessing
 vendor.display.enable_default_color_mode=0
 
