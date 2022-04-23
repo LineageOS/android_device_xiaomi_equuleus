@@ -12,7 +12,3 @@ ro.hardware.gps=brcm
 persist.vendor.sys.fp.udfps.location.X_Y=453,1640
 persist.vendor.sys.fp.udfps.size.width_height=173,173
 ro.hardware.fp.udfps=true
-
-# NFC
-ro.hardware.nfc_nci=nqx.default
-ro.se.type=HCE,UICC
