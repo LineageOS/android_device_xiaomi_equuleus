@@ -36,8 +36,5 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.xiaomi_sd
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/equuleus/BoardConfigVendor.mk
