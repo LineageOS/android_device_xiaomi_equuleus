@@ -37,8 +37,5 @@ TARGET_USES_FOD_ZPOS := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Inherit from the proprietary version
 include vendor/xiaomi/equuleus/BoardConfigVendor.mk
