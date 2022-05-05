@@ -8,6 +8,11 @@ vendor.display.enable_default_color_mode=0
 ro.hardware.flp=brcm
 ro.hardware.gps=brcm
 
+# IFAAService
+persist.vendor.sys.fp.udfps.location.X_Y=453,1640
+persist.vendor.sys.fp.udfps.size.width_height=173,173
+ro.hardware.fp.udfps=true
+
 # NFC
 ro.hardware.nfc_nci=nqx.default
 ro.se.type=HCE,UICC
