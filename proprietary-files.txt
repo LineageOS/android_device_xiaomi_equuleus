@@ -1,4 +1,4 @@
-# Device proprietary files - from equuleus' MIUI package V12.0.4.0.QECCNXM CN stable version
+# Device proprietary files - from equuleus' MIUI package V12.5.2.0.QECCNXM CN stable version
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
