@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor
+    libkeymaster_portable.vendor \
+    libudfpshandler
 
 # GPS
 PRODUCT_COPY_FILES += \
