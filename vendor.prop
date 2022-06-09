@@ -11,4 +11,3 @@ ro.hardware.gps=brcm
 # IFAAService
 persist.vendor.sys.fp.udfps.location.X_Y=453,1640
 persist.vendor.sys.fp.udfps.size.width_height=173,173
-ro.hardware.fp.udfps=true
