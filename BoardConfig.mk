@@ -18,7 +18,7 @@ TARGET_OTA_ASSERT_DEVICE := equuleus
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := equuleus_defconfig
+TARGET_KERNEL_CONFIG += vendor/xiaomi/equuleus.config
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
