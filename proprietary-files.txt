@@ -190,7 +190,6 @@ vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod
 vendor/lib64/libgf_ca_gf9118.so
 vendor/lib64/libgf_hal_gf9118.so
 vendor/lib64/libgoodixhwfingerprint_gf9118.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # GNSS
 vendor/bin/glgps

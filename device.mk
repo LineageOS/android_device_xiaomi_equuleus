@@ -68,7 +68,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
     libkeymaster_portable.vendor \
-    libudfpshandler
+    libudfpshandler \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
