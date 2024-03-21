@@ -1,8 +1,10 @@
 #
-# Copyright (C) 2019-2022 The LineageOS Project
+# Copyright (C) 2019-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
@@ -63,6 +65,9 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
+
+# Fastboot
+TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
 # Fingerprint
 PRODUCT_PACKAGES += \
