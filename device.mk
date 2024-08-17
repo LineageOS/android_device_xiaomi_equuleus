@@ -69,11 +69,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor \
-    liblzma.vendor \
-    libudfpshandler \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    libudfpshandler
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -90,7 +86,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
-    libchrome.vendor \
     Tag
 
 PRODUCT_COPY_FILES += \
