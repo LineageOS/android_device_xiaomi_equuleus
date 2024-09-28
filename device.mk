@@ -66,9 +66,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.target.rc
 
-# Fastboot
-TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
