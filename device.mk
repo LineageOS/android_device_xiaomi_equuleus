@@ -60,7 +60,8 @@ PRODUCT_COPY_FILES += \
 
 # Device fstab
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    fstab.qcom.ramdisk
 
 # Device init scripts
 PRODUCT_PACKAGES += \
