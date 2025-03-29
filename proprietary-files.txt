@@ -1,6 +1,6 @@
 # Device proprietary files - from equuleus' MIUI package V12.5.2.0.QECCNXM CN stable version
 
-# ACDB
+# ACDB data
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
 vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_General_cal.acdb
@@ -11,7 +11,6 @@ vendor/etc/acdbdata/Tutu/Tutu_Hdmi_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Codec_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/lib/libacdbloader.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/dirac_resource.dar
@@ -25,11 +24,18 @@ vendor/firmware/tas2557_uCDSP.bin
 vendor/etc/tas2557_goer.ftcfg
 vendor/etc/tas2557.ftcfg
 
+# Audio
+vendor/lib/libacdbloader.so
+vendor/lib/libcsd-client.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/libbtnv.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Camera
 vendor/bin/remosaic_daemon
@@ -151,15 +157,13 @@ vendor/lib/libc++_shared.so
 vendor/lib/libFaceGrade.so
 vendor/lib/libft2vendor.so
 vendor/lib/libHalSuperSensorServer.so
-vendor/lib/libmdsprpc.so
 vendor/lib/libmibokeh_845.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmpbase.so
-vendor/lib/libnanopb.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libremosaiclib.so
-vendor/lib/libSNPE.so
+vendor/lib/libSNPE.so;DISABLE_CHECKELF
 vendor/lib/libSuperSensor.so
 vendor/lib/libSuperSensorCPU.so
 vendor/lib/libswregistrationalgo.so
@@ -183,10 +187,15 @@ vendor/etc/sdr_config.cfg
 vendor/etc/hdr_config.cfg
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sdm845.so
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sdm845.so;FIX_SONAME
 vendor/lib64/libgf_ca_gf9118.so
 vendor/lib64/libgf_hal_gf9118.so
 vendor/lib64/libgoodixhwfingerprint_gf9118.so
+
+# Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
 vendor/bin/glgps
@@ -198,8 +207,8 @@ vendor/etc/gpsconfig.xml
 vendor/etc/lhd.conf
 vendor/etc/SensorHub.patch
 vendor/lib64/android.hardware.gnss@2.0-impl-xiaomi.so
-vendor/lib64/hw/flp.brcm.so
-vendor/lib64/hw/gps.brcm.so
+vendor/lib64/hw/flp.brcm.so;FIX_SONAME
+vendor/lib64/hw/gps.brcm.so;FIX_SONAME
 vendor/lib64/libdiagjni.so
 vendor/lib64/libgps.utils.so
 
