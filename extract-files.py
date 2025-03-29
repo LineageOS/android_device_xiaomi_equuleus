@@ -14,6 +14,9 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'hardware/qcom-caf/sdm845',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/display',
     'vendor/xiaomi/sdm845-common'
 ]
 
@@ -25,9 +28,8 @@ blob_fixups: blob_fixups_user_type = {
 module = ExtractUtilsModule(
     'equuleus',
     'xiaomi',
-    namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
-    check_elf=False,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
